@@ -15,15 +15,10 @@ const db = mysql.createConnection({
 
 //   root hFUfJe13bG 20.205.248.11
 
-app.get("/test", (req, res) => {
-    db.query("SELECT * FROM tset", (err, result) => {
-      if (err) {
-        console.log(err);
-      } else {
-        res.send(result);
-      }
-    });
-});
+
+const HamRoute = require('./routes/test.route');
+app.use('/test',HamRoute);
+
 app.listen(3001, () => {
     console.log("Yey, your server is running on http://localhost:3001/");
 });
