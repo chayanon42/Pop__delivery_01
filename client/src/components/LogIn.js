@@ -1,10 +1,10 @@
 import React, { useContext  } from 'react'
-import { Link } from 'react-router-dom'
-import { Redirect } from 'react-router-dom'
-import { AuthContext } from './Auth'
-import firebaseConfig from '../config'
-import '../assets/css/styles3.css'
-import bg from'../assets/img/56.jpg'
+// import { Link } from 'react-router-dom'
+// import { Redirect } from 'react-router-dom'
+import { AuthContext } from '../components/Auth'
+import firebaseConfig from '../components/config'
+import '../assets/styles.1.css'
+// import bg from'../assets/img/56.jpg'
 // import imgs15 from "../assets/img/56.jpg"
 const LogIn = () => {
 
